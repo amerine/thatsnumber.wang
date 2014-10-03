@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/amerine/thatsnumber.wang",
+	"GoVersion": "go1.3.2",
+	"Deps": []
+}
