@@ -20,30 +20,30 @@ var page = `
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>thats numberwang</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-git.js"></script>
     <style type="text/css">
       body {
         overflow: hidden;
+	background: black;
+      }
+      .container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+      }
+      .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     </style>
-
-    <script type="text/javascript">//<![CDATA[
-      $(window).load(function(){
-        $(function(){
-          $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-
-          $(window).resize(function(){
-            $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-          });
-        });
-
-      });//]]>
-    </script>
-
-
   </head>
   <body>
-    <iframe id="video" src="//www.youtube.com/embed/qjOZtWZ56lc?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <div class="container">
+      <iframe class="video" src="//www.youtube.com/embed/qjOZtWZ56lc?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
   </body>
 </html>
 `
